@@ -28,3 +28,6 @@ python difys/main.py
 ```
 
 ### 相关截图
+![image](https://github.com/user-attachments/assets/a67f3f74-2bcd-4450-b550-7c6bcb028526)
+![image](https://github.com/user-attachments/assets/15374273-8a84-43e7-99ff-2ffd0e6f0a10)
+
