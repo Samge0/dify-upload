@@ -147,3 +147,6 @@ test*.py
 .vscode/
 node_modules/
 configs.py
+claude/
+cursor/
+codex/

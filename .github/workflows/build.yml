@@ -1,0 +1,246 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows-x64:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+    - name: Debug Information
+      run: |
+        echo "Running on Windows x64"
+        echo "Tag: ${{ github.ref }}"
+        echo "Event name: ${{ github.event_name }}"
+
+    - uses: actions/checkout@v6
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v4
+      with:
+        architecture: 'x64'
+        miniconda-version: "latest"
+        python-version: "3.13"
+        activate-environment: "dify-upload"
+        conda-remove-defaults: true
+
+    - name: Install dependencies with Conda
+      run: |
+        conda install -y -n dify-upload -c conda-forge tk
+        conda run -n dify-upload --no-capture-output pip install -r requirements.txt
+        conda run -n dify-upload --no-capture-output pip install -r scripts/requirements.txt
+
+    - name: Build with PyInstaller
+      run: |
+        $env:TARGET_ARCH="x64"
+        conda run -n dify-upload --no-capture-output python scripts/build.py
+
+    - name: List build artifacts
+      run: |
+        dir dist
+
+    - name: Rename Windows x64 binary
+      run: |
+        move dist\DifyUpload.exe dist\DifyUpload-windows-x64.exe
+
+    - name: Upload Windows x64 artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-x64-artifact
+        path: dist/DifyUpload-windows-x64.exe
+
+  build-linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+    - name: Debug Information
+      run: |
+        echo "Running on Linux"
+        echo "Tag: ${{ github.ref }}"
+        echo "Event name: ${{ github.event_name }}"
+        echo "System architecture:"
+        uname -m
+
+    - uses: actions/checkout@v6
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v4
+      with:
+        miniconda-version: "latest"
+        python-version: "3.13"
+        activate-environment: "dify-upload"
+        conda-remove-defaults: true
+
+    - name: Install dependencies with Conda
+      run: |
+        conda install -y -n dify-upload -c conda-forge tk
+        conda run -n dify-upload --no-capture-output pip install -r requirements.txt
+        conda run -n dify-upload --no-capture-output pip install -r scripts/requirements.txt
+
+    - name: Build with PyInstaller
+      run: |
+        # 获取系统架构
+        ARCH=$(uname -m)
+        echo "Building for Linux $ARCH"
+        export TARGET_ARCH="$ARCH"
+        conda run -n dify-upload --no-capture-output python scripts/build.py
+
+    - name: List build artifacts
+      run: |
+        echo "Listing dist directory contents:"
+        ls -la dist/
+
+    - name: Rename Linux binary
+      run: |
+        ARCH=$(uname -m)
+        mv dist/DifyUpload "dist/DifyUpload-linux-$ARCH"
+
+    - name: Upload Linux artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: linux-artifact
+        path: dist/DifyUpload-linux-*
+
+  build-macos-x86_64:
+    # macos-13 于 2025-12-04 EOL；macos-15-intel 是 GitHub 为 Intel x86_64 用户提供的标准 runner（免费账号可用，支持到 2027-08）：https://github.blog/changelog/2025-09-19-github-actions-macos-13-runner-image-is-closing-down/
+    runs-on: macos-15-intel
+    timeout-minutes: 30
+    steps:
+    - name: Debug Information
+      run: |
+        echo "Running on macOS x86_64"
+        echo "Tag: ${{ github.ref }}"
+        echo "Event name: ${{ github.event_name }}"
+
+    - uses: actions/checkout@v6
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v4
+      with:
+        miniconda-version: "latest"
+        python-version: "3.13"
+        activate-environment: "dify-upload"
+        conda-remove-defaults: true
+
+    - name: Install dependencies with Conda
+      run: |
+        conda install -y -n dify-upload -c conda-forge tk
+        conda run -n dify-upload --no-capture-output pip install -r requirements.txt
+        conda run -n dify-upload --no-capture-output pip install -r scripts/requirements.txt
+
+    - name: Build with PyInstaller
+      run: |
+        export TARGET_ARCH="x86_64"
+        conda run -n dify-upload --no-capture-output python scripts/build.py
+
+    - name: List build artifacts
+      run: |
+        echo "Listing dist directory contents:"
+        ls -la dist/
+
+    - name: Create DMG
+      run: |
+        # 创建临时目录
+        mkdir -p tmp_dmg
+
+        # 复制应用程序到临时目录
+        cp -R "dist/DifyUpload.app" tmp_dmg/
+
+        # 创建 DMG
+        hdiutil create -volname "DifyUpload-x86_64" -srcfolder tmp_dmg -ov -format UDZO dist/dify-upload-macos-x86_64.dmg
+
+        # 清理临时目录
+        rm -rf tmp_dmg
+
+    - name: Upload macOS x86_64 artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: macos-x86_64-artifact
+        path: dist/dify-upload-macos-x86_64.dmg
+
+  build-macos-arm64:
+    runs-on: macos-14
+    timeout-minutes: 30
+    steps:
+    - name: Debug Information
+      run: |
+        echo "Running on macOS ARM64"
+        echo "Tag: ${{ github.ref }}"
+        echo "Event name: ${{ github.event_name }}"
+
+    - uses: actions/checkout@v6
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v4
+      with:
+        miniconda-version: "latest"
+        python-version: "3.13"
+        activate-environment: "dify-upload"
+        conda-remove-defaults: true
+
+    - name: Install dependencies with Conda
+      run: |
+        conda install -y -n dify-upload -c conda-forge tk
+        conda run -n dify-upload --no-capture-output pip install -r requirements.txt
+        conda run -n dify-upload --no-capture-output pip install -r scripts/requirements.txt
+
+    - name: Build with PyInstaller
+      run: |
+        export TARGET_ARCH="arm64"
+        conda run -n dify-upload --no-capture-output python scripts/build.py
+
+    - name: List build artifacts
+      run: |
+        echo "Listing dist directory contents:"
+        ls -la dist/
+
+    - name: Create DMG
+      run: |
+        # 创建临时目录
+        mkdir -p tmp_dmg
+
+        # 复制应用程序到临时目录
+        cp -R "dist/DifyUpload.app" tmp_dmg/
+
+        # 创建 DMG
+        hdiutil create -volname "DifyUpload-arm64" -srcfolder tmp_dmg -ov -format UDZO dist/dify-upload-macos-arm64.dmg
+
+        # 清理临时目录
+        rm -rf tmp_dmg
+
+    - name: Upload macOS ARM64 artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: macos-arm64-artifact
+        path: dist/dify-upload-macos-arm64.dmg
+
+  create-release:
+    needs: [build-windows-x64, build-linux, build-macos-x86_64, build-macos-arm64]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          artifacts/windows-x64-artifact/DifyUpload-windows-x64.exe
+          artifacts/linux-artifact/DifyUpload-linux-*
+          artifacts/macos-x86_64-artifact/dify-upload-macos-x86_64.dmg
+          artifacts/macos-arm64-artifact/dify-upload-macos-arm64.dmg
+        draft: false
+        prerelease: false
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

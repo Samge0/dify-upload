@@ -1,3 +1,2 @@
-requests
-pytz
-psycopg2-binary==2.9.9
+requests==2.34.2
+pytz==2026.2
