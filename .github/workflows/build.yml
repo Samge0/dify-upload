@@ -29,6 +29,7 @@ jobs:
         miniconda-version: "latest"
         python-version: "3.13"
         activate-environment: "dify-upload"
+        channels: conda-forge
         conda-remove-defaults: true
 
     - name: Install dependencies with Conda
@@ -76,6 +77,7 @@ jobs:
         miniconda-version: "latest"
         python-version: "3.13"
         activate-environment: "dify-upload"
+        channels: conda-forge
         conda-remove-defaults: true
 
     - name: Install dependencies with Conda
@@ -127,6 +129,7 @@ jobs:
         miniconda-version: "latest"
         python-version: "3.13"
         activate-environment: "dify-upload"
+        channels: conda-forge
         conda-remove-defaults: true
 
     - name: Install dependencies with Conda
@@ -183,6 +186,7 @@ jobs:
         miniconda-version: "latest"
         python-version: "3.13"
         activate-environment: "dify-upload"
+        channels: conda-forge
         conda-remove-defaults: true
 
     - name: Install dependencies with Conda
