@@ -4,11 +4,25 @@
 # date：2024-07-24 10:38
 # describe：
 from datetime import datetime
+import functools
 import pytz
 import time
+import sys
+import os
+
+# 时区配置
+TIME_ZONE = os.environ.get('TZ', 'Asia/Shanghai')
+
+# 添加scripts目录到系统路径，便于打包后在 launcher 中 `from logs import LogHandler`
+# 仅当目录存在时才追加，避免源码运行模式下污染 sys.path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+scripts_dir = os.path.join(os.path.dirname(current_dir), 'scripts')
+if os.path.isdir(scripts_dir) and scripts_dir not in sys.path:
+    sys.path.append(scripts_dir)
 
 # 计算函数耗时
 def monitor(func):
+    @functools.wraps(func)
     def wrapper(*args, **kwargs):
         start_time = time.time()  # 记录开始时间
         result = func(*args, **kwargs)  # 执行被装饰的函数
@@ -20,12 +34,11 @@ def monitor(func):
 
 
 def get_now_str():
-    # 获取上海时区时间
-    shanghai_tz = pytz.timezone('Asia/Shanghai')
-    shanghai_time = datetime.now(shanghai_tz)
-    return shanghai_time.strftime("%Y-%m-%d %H:%M:%S")
+    """获取当前时间的字符串表示"""
+    return datetime.now(pytz.timezone(TIME_ZONE)).strftime('%Y-%m-%d %H:%M:%S')
 
 
 def print_log(*values: object):
     # 打印带当前年月日 时分秒 的日志
-    print(get_now_str(), *values)
+    message = f"{get_now_str()} {' '.join(str(v) for v in values)}"
+    print(message)
