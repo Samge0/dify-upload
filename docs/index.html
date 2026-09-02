@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<!DOCTYPE html><html lang="zh-CN"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dify 文档批量上传工具 - 自动遍历上传与索引轮询</title>
@@ -8,8 +6,8 @@
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -127,7 +125,7 @@
             width: 100%;
         }
     </style>
-</head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-right-4{right:-1rem}.bottom-10{bottom:2.5rem}.left-10{left:2.5rem}.right-0{right:0px}.right-10{right:2.5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-20{top:5rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-96{height:24rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.animate-fade-in{animation:fadeIn 0.6s ease-out}@keyframes slideUp{0%{transform:translateY(20px);opacity:0}100%{transform:translateY(0);opacity:1}}.animate-slide-up{animation:slideUp 0.6s ease-out}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-bl-xl{border-bottom-left-radius:0.75rem}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-brand-100{--tw-border-opacity:1;border-color:rgb(208 228 255 / var(--tw-border-opacity, 1))}.border-brand-200{--tw-border-opacity:1;border-color:rgb(168 199 255 / var(--tw-border-opacity, 1))}.bg-blue-200\/20{background-color:rgb(191 219 254 / 0.2)}.bg-brand-200\/20{background-color:rgb(168 199 255 / 0.2)}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(232 240 255 / var(--tw-bg-opacity, 1))}.bg-brand-500{--tw-bg-opacity:1;background-color:rgb(30 111 255 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-brand-50{--tw-gradient-from:#e8f0ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(232 240 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-100\/30{--tw-gradient-from:rgb(208 228 255 / 0.3) var(--tw-gradient-from-position);--tw-gradient-to:rgb(208 228 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-500{--tw-gradient-from:#1e6fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 111 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-50{--tw-gradient-to:#eff6ff var(--tw-gradient-to-position)}.to-blue-100\/20{--tw-gradient-to:rgb(219 234 254 / 0.2) var(--tw-gradient-to-position)}.to-brand-600{--tw-gradient-to:#0d43e5 var(--tw-gradient-to-position)}.p-10{padding:2.5rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-20{padding-bottom:5rem}.pb-6{padding-bottom:1.5rem}.pt-32{padding-top:8rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-sans{font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-brand-300{--tw-text-opacity:1;color:rgb(122 168 255 / var(--tw-text-opacity, 1))}.text-brand-400{--tw-text-opacity:1;color:rgb(77 137 255 / var(--tw-text-opacity, 1))}.text-brand-500{--tw-text-opacity:1;color:rgb(30 111 255 / var(--tw-text-opacity, 1))}.text-brand-600{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(10 50 168 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-5{opacity:0.05}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-brand-500\/30{--tw-shadow-color:rgb(30 111 255 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-brand-50\/50:hover{background-color:rgb(232 240 255 / 0.5)}.hover\:bg-white\/90:hover{background-color:rgb(255 255 255 / 0.9)}.hover\:text-brand-600:hover{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.group[open] .group-open\:rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-right-4{right:-1rem}.bottom-10{bottom:2.5rem}.left-10{left:2.5rem}.right-0{right:0px}.right-10{right:2.5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-20{top:5rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-96{height:24rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.animate-fade-in{animation:fadeIn 0.6s ease-out}@keyframes slideUp{0%{transform:translateY(20px);opacity:0}100%{transform:translateY(0);opacity:1}}.animate-slide-up{animation:slideUp 0.6s ease-out}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-bl-xl{border-bottom-left-radius:0.75rem}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-brand-100{--tw-border-opacity:1;border-color:rgb(208 228 255 / var(--tw-border-opacity, 1))}.border-brand-200{--tw-border-opacity:1;border-color:rgb(168 199 255 / var(--tw-border-opacity, 1))}.bg-blue-200\/20{background-color:rgb(191 219 254 / 0.2)}.bg-brand-200\/20{background-color:rgb(168 199 255 / 0.2)}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(232 240 255 / var(--tw-bg-opacity, 1))}.bg-brand-500{--tw-bg-opacity:1;background-color:rgb(30 111 255 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-brand-50{--tw-gradient-from:#e8f0ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(232 240 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-100\/30{--tw-gradient-from:rgb(208 228 255 / 0.3) var(--tw-gradient-from-position);--tw-gradient-to:rgb(208 228 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-500{--tw-gradient-from:#1e6fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 111 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-50{--tw-gradient-to:#eff6ff var(--tw-gradient-to-position)}.to-blue-100\/20{--tw-gradient-to:rgb(219 234 254 / 0.2) var(--tw-gradient-to-position)}.to-brand-600{--tw-gradient-to:#0d43e5 var(--tw-gradient-to-position)}.p-10{padding:2.5rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-20{padding-bottom:5rem}.pb-6{padding-bottom:1.5rem}.pt-32{padding-top:8rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-sans{font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-brand-300{--tw-text-opacity:1;color:rgb(122 168 255 / var(--tw-text-opacity, 1))}.text-brand-400{--tw-text-opacity:1;color:rgb(77 137 255 / var(--tw-text-opacity, 1))}.text-brand-500{--tw-text-opacity:1;color:rgb(30 111 255 / var(--tw-text-opacity, 1))}.text-brand-600{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(10 50 168 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-5{opacity:0.05}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-brand-500\/30{--tw-shadow-color:rgb(30 111 255 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-brand-50\/50:hover{background-color:rgb(232 240 255 / 0.5)}.hover\:bg-white\/90:hover{background-color:rgb(255 255 255 / 0.9)}.hover\:text-brand-600:hover{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.group[open] .group-open\:rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-right-4{right:-1rem}.bottom-10{bottom:2.5rem}.left-10{left:2.5rem}.right-0{right:0px}.right-10{right:2.5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-20{top:5rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-96{height:24rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.animate-fade-in{animation:fadeIn 0.6s ease-out}@keyframes slideUp{0%{transform:translateY(20px);opacity:0}100%{transform:translateY(0);opacity:1}}.animate-slide-up{animation:slideUp 0.6s ease-out}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-bl-xl{border-bottom-left-radius:0.75rem}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-brand-100{--tw-border-opacity:1;border-color:rgb(208 228 255 / var(--tw-border-opacity, 1))}.border-brand-200{--tw-border-opacity:1;border-color:rgb(168 199 255 / var(--tw-border-opacity, 1))}.bg-blue-200\/20{background-color:rgb(191 219 254 / 0.2)}.bg-brand-200\/20{background-color:rgb(168 199 255 / 0.2)}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(232 240 255 / var(--tw-bg-opacity, 1))}.bg-brand-500{--tw-bg-opacity:1;background-color:rgb(30 111 255 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-brand-50{--tw-gradient-from:#e8f0ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(232 240 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-100\/30{--tw-gradient-from:rgb(208 228 255 / 0.3) var(--tw-gradient-from-position);--tw-gradient-to:rgb(208 228 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-500{--tw-gradient-from:#1e6fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 111 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-50{--tw-gradient-to:#eff6ff var(--tw-gradient-to-position)}.to-blue-100\/20{--tw-gradient-to:rgb(219 234 254 / 0.2) var(--tw-gradient-to-position)}.to-brand-600{--tw-gradient-to:#0d43e5 var(--tw-gradient-to-position)}.p-10{padding:2.5rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-20{padding-bottom:5rem}.pb-6{padding-bottom:1.5rem}.pt-32{padding-top:8rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-sans{font-family:"Noto Sans SC", "Inter", "Manrope", system-ui, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-brand-300{--tw-text-opacity:1;color:rgb(122 168 255 / var(--tw-text-opacity, 1))}.text-brand-400{--tw-text-opacity:1;color:rgb(77 137 255 / var(--tw-text-opacity, 1))}.text-brand-500{--tw-text-opacity:1;color:rgb(30 111 255 / var(--tw-text-opacity, 1))}.text-brand-600{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(10 50 168 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-5{opacity:0.05}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-brand-500\/30{--tw-shadow-color:rgb(30 111 255 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-brand-50\/50:hover{background-color:rgb(232 240 255 / 0.5)}.hover\:bg-white\/90:hover{background-color:rgb(255 255 255 / 0.9)}.hover\:text-brand-600:hover{--tw-text-opacity:1;color:rgb(13 67 229 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.group[open] .group-open\:rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
 <body class="bg-gradient-to-br from-brand-50 via-white to-blue-50 min-h-screen text-gray-800 font-sans antialiased">
     
     <!-- Navigation -->
@@ -149,7 +147,7 @@
                     <a href="https://github.com/Samge0/dify-upload" target="_blank" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">
                         GitHub
                     </a>
-                    <a href="https://github.com/Samge0/dify-upload/releases" target="_blank" class="cta-button text-white px-5 py-2.5 rounded-lg font-medium">
+                    <a href="https://github.com/Samge0/dify-upload/releases" target="_blank" class="cta-button text-white px-5 py-2.5 rounded-lg font-medium" data-a11yfix="1" style="background-image: none !important; background-color: rgb(31, 41, 55) !important; color: rgb(255, 255, 255) !important;">
                         下载工具
                     </a>
                 </div>
@@ -171,14 +169,14 @@
                 <p class="text-xl sm:text-2xl text-gray-600 mb-4 font-medium">
                     自动遍历目录，批量上传文档，智能索引轮询
                 </p>
-                <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">
                     基于 Dify 知识库 API 的文档批量上传与解析工具。自动遍历目录，逐个上传文档到知识库，并轮询索引状态直至完成。
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="https://github.com/Samge0/dify-upload/releases" target="_blank" class="cta-button text-white px-8 py-4 rounded-xl font-semibold text-lg w-full sm:w-auto">
+                    <a href="https://github.com/Samge0/dify-upload/releases" target="_blank" class="cta-button text-white px-8 py-4 rounded-xl font-semibold text-lg w-full sm:w-auto" data-a11yfix="1" style="background-image: none !important; background-color: rgb(31, 41, 55) !important; color: rgb(255, 255, 255) !important;">
                         下载 GUI 客户端
                     </a>
-                    <a href="https://github.com/Samge0/dify-upload" target="_blank" class="glass-card text-brand-600 px-8 py-4 rounded-xl font-semibold text-lg w-full sm:w-auto hover:bg-white/90 transition-colors border-2 border-brand-200">
+                    <a href="https://github.com/Samge0/dify-upload" target="_blank" class="glass-card text-brand-600 px-8 py-4 rounded-xl font-semibold text-lg w-full sm:w-auto hover:bg-white/90 transition-colors border-2 border-brand-200" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         查看源码
                     </a>
                 </div>
@@ -186,7 +184,7 @@
 
             <!-- Hero Visual -->
             <div class="mt-16 animate-fade-in">
-                <div class="glass-card rounded-2xl p-8 max-w-4xl mx-auto gradient-border">
+                <div class="glass-card rounded-2xl p-8 max-w-4xl mx-auto gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="aspect-video bg-gradient-to-br from-brand-50 to-blue-50 rounded-xl flex items-center justify-center relative overflow-hidden">
                         <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
                         <div class="text-center z-10">
@@ -214,41 +212,41 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-2xl font-semibold text-center text-gray-700 mb-10">平台兼容性</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300">
+                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-full flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                     </div>
                     <p class="font-semibold text-gray-800">Dify 1.13.3</p>
-                    <p class="text-sm text-gray-500 mt-1">测试通过</p>
+                    <p class="text-sm text-gray-500 mt-1" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">测试通过</p>
                 </div>
-                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300">
+                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-full flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                         </svg>
                     </div>
                     <p class="font-semibold text-gray-800">Python 3.13+</p>
-                    <p class="text-sm text-gray-500 mt-1">源码运行</p>
+                    <p class="text-sm text-gray-500 mt-1" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">源码运行</p>
                 </div>
-                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300">
+                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-full flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                     </div>
                     <p class="font-semibold text-gray-800">Windows</p>
-                    <p class="text-sm text-gray-500 mt-1">GUI 客户端</p>
+                    <p class="text-sm text-gray-500 mt-1" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">GUI 客户端</p>
                 </div>
-                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300">
+                <div class="glass-card rounded-xl p-6 text-center feature-card transition-all duration-300" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-full flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"></path>
                         </svg>
                     </div>
                     <p class="font-semibold text-gray-800">macOS / Linux</p>
-                    <p class="text-sm text-gray-500 mt-1">跨平台支持</p>
+                    <p class="text-sm text-gray-500 mt-1" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">跨平台支持</p>
                 </div>
             </div>
         </div>
@@ -278,118 +276,118 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">批量上传</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">批量上传</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         自动遍历文档目录及子目录，将所有支持的文档文件批量上传到 Dify 知识库。支持 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">.md</code>、<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">.txt</code>、<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">.pdf</code>、<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">.docx</code> 等多种格式（由 DOC_SUFFIX 配置）。
                     </p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">索引轮询</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">索引轮询</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         上传后通过官方 API 轮询索引进度，支持阶段显示（排队中 → 解析中 → 清洗中 → 切分中 → 索引中 → 已完成）。一个文件索引完成后再处理下一个。
                     </p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">断点续传</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">断点续传</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         自动记录每个文件的处理状态（待处理 / 已上传 / 索引中 / 完成 / 失败）。中断后重新运行会自动跳过已完成的文件，仅继续处理未完成或失败的文件。
                     </p>
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">去重兜底</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">去重兜底</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         即使进度记录丢失，也会通过 API 查询文档是否已存在，避免重复上传。对已存在但未完成索引的文档，自动恢复轮询。
                     </p>
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">元数据管理</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">元数据管理</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         支持为文档设置自定义元数据——创建同名 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">.meta.json</code> 文件，工具自动按 key 创建知识库元数据字段并赋值。
                     </p>
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">自动建库</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">自动建库</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         知识库不存在时可选按名称自动创建。仅凭一个 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">dataset-</code> 开头的 API Key 即可运行。
                     </p>
                 </div>
 
                 <!-- Feature 7 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">纯 API 模式</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">纯 API 模式</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         无需数据库依赖，不直连 Dify 后端数据库，仅使用官方知识库 API，部署简单、安全可靠。
                     </p>
                 </div>
 
                 <!-- Feature 8 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">API 请求日志</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">API 请求日志</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         独立记录每次 Dify API 请求（地址 / 请求头脱敏 / 请求体 / 响应），便于排查问题。敏感字段（auth/token/secret/password）自动脱敏。日志按天切割，保留 30 天。
                     </p>
                 </div>
 
                 <!-- Feature 9 -->
-                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border">
+                <div class="glass-card rounded-xl p-8 feature-card transition-all duration-300 gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center mb-5">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">GUI 客户端</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">GUI 客户端</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                         提供 基于 customtkinter 的图形界面客户端，可在 Releases 页面下载编译好的 Windows / macOS / Linux 可执行程序，启动后直接在界面填写配置，无需手动编辑配置文件。
                     </p>
                 </div>
@@ -409,10 +407,10 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="relative">
-                    <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                    <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">1</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">配置 API</h3>
-                        <p class="text-gray-600 leading-relaxed">填入 Dify API 地址和 dataset- 开头的 API Key</p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">配置 API</h3>
+                        <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">填入 Dify API 地址和 dataset- 开头的 API Key</p>
                     </div>
                     <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-brand-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -422,10 +420,10 @@
                 </div>
 
                 <div class="relative">
-                    <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                    <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">2</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">指定目录</h3>
-                        <p class="text-gray-600 leading-relaxed">配置文档所在目录和文件后缀</p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">指定目录</h3>
+                        <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">配置文档所在目录和文件后缀</p>
                     </div>
                     <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-brand-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -435,10 +433,10 @@
                 </div>
 
                 <div class="relative">
-                    <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                    <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">3</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">自动遍历</h3>
-                        <p class="text-gray-600 leading-relaxed">工具遍历目录及子目录，筛选符合条件的文档</p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">自动遍历</h3>
+                        <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">工具遍历目录及子目录，筛选符合条件的文档</p>
                     </div>
                     <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-brand-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -448,10 +446,10 @@
                 </div>
 
                 <div class="relative">
-                    <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                    <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">4</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">逐个上传</h3>
-                        <p class="text-gray-600 leading-relaxed">检查去重后，通过 create-by-file 接口上传</p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">逐个上传</h3>
+                        <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">检查去重后，通过 create-by-file 接口上传</p>
                     </div>
                     <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-brand-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -461,10 +459,10 @@
                 </div>
 
                 <div class="relative">
-                    <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                    <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                         <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">5</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">索引轮询</h3>
-                        <p class="text-gray-600 leading-relaxed">轮询索引进度，等待当前文件完成</p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">索引轮询</h3>
+                        <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">轮询索引进度，等待当前文件完成</p>
                     </div>
                     <div class="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-brand-300">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -473,10 +471,10 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-xl p-8 h-full gradient-border">
+                <div class="glass-card rounded-xl p-8 h-full gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="step-number w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mb-5">6</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">记录状态</h3>
-                    <p class="text-gray-600 leading-relaxed">记录处理状态，完成后处理下一个文件</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">记录状态</h3>
+                    <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">记录处理状态，完成后处理下一个文件</p>
                 </div>
             </div>
         </div>
@@ -492,7 +490,7 @@
                 </p>
             </div>
 
-            <div class="glass-card rounded-2xl p-10 max-w-5xl mx-auto gradient-border">
+            <div class="glass-card rounded-2xl p-10 max-w-5xl mx-auto gradient-border" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                     <!-- Step 1 -->
                     <div class="flex flex-col items-center text-center">
@@ -501,8 +499,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">文档目录</h4>
-                        <p class="text-sm text-gray-500">指定文件夹</p>
+                        <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">文档目录</h4>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">指定文件夹</p>
                     </div>
 
                     <!-- Arrow -->
@@ -519,8 +517,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">遍历筛选</h4>
-                        <p class="text-sm text-gray-500">递归遍历</p>
+                        <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">遍历筛选</h4>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">递归遍历</p>
                     </div>
 
                     <!-- Arrow -->
@@ -537,8 +535,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">批量上传</h4>
-                        <p class="text-sm text-gray-500">Dify API</p>
+                        <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">批量上传</h4>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">Dify API</p>
                     </div>
 
                     <!-- Arrow -->
@@ -555,8 +553,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">索引轮询</h4>
-                        <p class="text-sm text-gray-500">状态监控</p>
+                        <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">索引轮询</h4>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">状态监控</p>
                     </div>
 
                     <!-- Arrow -->
@@ -573,8 +571,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">完成</h4>
-                        <p class="text-sm text-gray-500">文档入库</p>
+                        <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">完成</h4>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">文档入库</p>
                     </div>
                 </div>
 
@@ -587,8 +585,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-900 mb-2">纯 API 模式设计</h4>
-                            <p class="text-gray-600 leading-relaxed">
+                            <h4 class="font-semibold text-gray-900 mb-2" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">纯 API 模式设计</h4>
+                            <p class="text-gray-600 leading-relaxed" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">
                                 工具仅使用 Dify 官方知识库 API，无需数据库依赖，不直连 Dify 后端数据库。这种设计确保了部署简单、安全可靠，适用于自部署 Dify 或 Dify Cloud（需开启知识库 API）。
                             </p>
                         </div>
@@ -610,49 +608,49 @@
 
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <!-- Source Code -->
-                <div class="glass-card rounded-2xl p-8 gradient-border feature-card transition-all duration-300">
+                <div class="glass-card rounded-2xl p-8 gradient-border feature-card transition-all duration-300" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-14 h-14 bg-gradient-to-br from-brand-500 to-brand-600 shadow-sm shadow-brand-500/30 rounded-xl flex items-center justify-center">
                             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900">源码运行</h3>
+                        <h3 class="text-2xl font-bold text-gray-900" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">源码运行</h3>
                     </div>
                     <ul class="space-y-4 text-gray-600">
                         <li class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>克隆项目：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">git clone https://github.com/Samge0/dify-upload</code></span>
+                            <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">克隆项目：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">git clone https://github.com/Samge0/dify-upload</code></span>
                         </li>
                         <li class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>安装依赖：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">pip install -r requirements.txt</code></span>
+                            <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">安装依赖：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">pip install -r requirements.txt</code></span>
                         </li>
                         <li class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>复制配置：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">configs.demo.py → configs.py</code> 并填写配置</span>
+                            <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">复制配置：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">configs.demo.py → configs.py</code> 并填写配置</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>运行：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">python -m difys.main</code></span>
+                            <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">运行：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">python -m difys.main</code></span>
                         </li>
                     </ul>
                     <div class="mt-6 pt-6 border-t border-brand-100">
-                        <p class="text-sm text-gray-500">需要 Python 3.13+ 环境</p>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">需要 Python 3.13+ 环境</p>
                     </div>
                 </div>
 
                 <!-- GUI Client -->
-                <div class="glass-card rounded-2xl p-8 border-2 border-brand-200 feature-card transition-all duration-300 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-brand-500 text-white px-4 py-1.5 rounded-bl-xl text-sm font-medium">
+                <div class="glass-card rounded-2xl p-8 border-2 border-brand-200 feature-card transition-all duration-300 relative overflow-hidden" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="absolute top-0 right-0 bg-brand-500 text-white px-4 py-1.5 rounded-bl-xl text-sm font-medium" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">
                         推荐
                     </div>
                     <div class="flex items-center gap-4 mb-6">
@@ -690,7 +688,7 @@
                         </li>
                     </ul>
                     <div class="mt-6 pt-6 border-t border-brand-100">
-                        <p class="text-sm text-gray-500">无需技术背景，适合所有用户</p>
+                        <p class="text-sm text-gray-500" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">无需技术背景，适合所有用户</p>
                     </div>
                 </div>
             </div>
@@ -702,11 +700,11 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-2xl font-semibold text-center text-gray-700 mb-10">技术栈</h2>
             <div class="flex flex-wrap justify-center gap-6">
-                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium">Python 3.13</div>
-                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium">Dify 知识库 API</div>
-                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium">customtkinter</div>
-                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium">PyInstaller</div>
-                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium">requests</div>
+                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">Python 3.13</div>
+                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">Dify 知识库 API</div>
+                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">customtkinter</div>
+                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">PyInstaller</div>
+                <div class="glass-card px-6 py-3 rounded-full text-gray-600 font-medium" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">requests</div>
             </div>
         </div>
     </section>
@@ -723,41 +721,41 @@
 
             <div class="space-y-4">
                 <!-- FAQ 1 -->
-                <details class="glass-card rounded-xl overflow-hidden gradient-border group">
+                <details class="glass-card rounded-xl overflow-hidden gradient-border group" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold text-gray-900 hover:bg-brand-50/50 transition-colors">
-                        <span>执行脚本提示 ModuleNotFoundError: No module named 'difys'</span>
+                        <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">执行脚本提示 ModuleNotFoundError: No module named 'difys'</span>
                         <svg class="w-5 h-5 text-brand-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
                     <div class="px-6 pb-6 text-gray-600">
-                        <p>在项目根目录使用 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">-m</code> 方式运行：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">python -m difys.main</code>，或配置 PYTHONPATH 环境变量。</p>
+                        <p data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">在项目根目录使用 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">-m</code> 方式运行：<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">python -m difys.main</code>，或配置 PYTHONPATH 环境变量。</p>
                     </div>
                 </details>
 
                 <!-- FAQ 2 -->
-                <details class="glass-card rounded-xl overflow-hidden gradient-border group">
+                <details class="glass-card rounded-xl overflow-hidden gradient-border group" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold text-gray-900 hover:bg-brand-50/50 transition-colors">
-                        <span>认证失败或 API 连接错误</span>
+                        <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">认证失败或 API 连接错误</span>
                         <svg class="w-5 h-5 text-brand-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
                     <div class="px-6 pb-6 text-gray-600">
-                        <p>检查 API_KEY 是否正确（需 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">dataset-</code> 开头）、是否有效，以及 API_URL 是否包含 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">/v1</code>。</p>
+                        <p data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">检查 API_KEY 是否正确（需 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">dataset-</code> 开头）、是否有效，以及 API_URL 是否包含 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">/v1</code>。</p>
                     </div>
                 </details>
 
                 <!-- FAQ 3 -->
-                <details class="glass-card rounded-xl overflow-hidden gradient-border group">
+                <details class="glass-card rounded-xl overflow-hidden gradient-border group" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
                     <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold text-gray-900 hover:bg-brand-50/50 transition-colors">
-                        <span>提示 indexing_technique is required</span>
+                        <span data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">提示 indexing_technique is required</span>
                         <svg class="w-5 h-5 text-brand-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
                     <div class="px-6 pb-6 text-gray-600">
-                        <p>向空知识库添加第一个文档时必须指定 INDEXING_TECHNIQUE（<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">high_quality</code> 或 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">economy</code>）。</p>
+                        <p data-a11yfix="1" style="color: rgb(17, 24, 39) !important;">向空知识库添加第一个文档时必须指定 INDEXING_TECHNIQUE（<code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">high_quality</code> 或 <code class="bg-brand-50 text-brand-700 px-1.5 py-0.5 rounded text-sm">economy</code>）。</p>
                     </div>
                 </details>
             </div>
@@ -795,11 +793,11 @@
                 </div>
             </div>
             <div class="pt-8 border-t border-brand-100 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-400 text-sm">© 2024 Dify 文档批量上传工具. MIT License.</p>
+                <p class="text-gray-400 text-sm" data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">© 2024 Dify 文档批量上传工具. MIT License.</p>
                 <div class="flex items-center space-x-6 text-sm text-gray-400">
-                    <span>兼容 Dify 1.13.3+</span>
+                    <span data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">兼容 Dify 1.13.3+</span>
                     <span>•</span>
-                    <span>Python 3.13+</span>
+                    <span data-a11yfix="1" style="color: rgb(0, 0, 0) !important;">Python 3.13+</span>
                 </div>
             </div>
         </div>
@@ -846,5 +844,6 @@
         const mobileMenuButton = document.querySelector('[aria-label="Mobile menu"]');
         const mobileMenu = document.querySelector('[role="dialog"]');
     </script>
-</body>
-</html>
+
+
+</body></html>
